@@ -1,9 +1,9 @@
 #include <stdio.h>
 
-int main(void) {
+int main() {
     int n;
-    printf("Enter a 3 digit number: ");
+    printf("Enter a number: ");
     scanf("%d", &n);
-    printf("Result: %d\n", (n % 10)+(n / 10 % 10)+(n / 100) );
+    printf("Result: %d\n", (n / 10)%10);
     return 0;
 }

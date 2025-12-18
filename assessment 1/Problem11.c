@@ -1,9 +1,12 @@
 #include <stdio.h>
-
-int main(void) {
-    int n;
-    printf("Enter a 3 digit number: ");
+int main() {
+    int n, d0, d1, sum, result;
+    printf("Enter 2 digit number: ");
     scanf("%d", &n);
-    printf("Result: %d\n", (n % 10)+(n / 10 % 10)+(n / 100) );
+    d0 = n % 10;
+    d1 = n / 10;
+    sum = d0 + d1;
+    result = sum;
+    printf("Result: %d\n", result);
     return 0;
 }
